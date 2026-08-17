@@ -1,0 +1,44 @@
+SRV Control Center
+
+Foundation stage: CC1
+Created: 2026-08-17T00:55:30+03:00
+
+Application:
+/opt/srv-control
+
+Configuration:
+/etc/srv-control
+
+State:
+/var/lib/srv-control
+
+Logs:
+/var/log/srv-control
+
+Cache:
+/var/cache/srv-control
+
+Database:
+PostgreSQL
+database=srv_control
+role=srv-control
+transport=local Unix socket
+authentication=peer
+
+No database password is stored.
+
+Planned modules:
+- Dashboard
+- Samba AD
+- Windows/Linux PXE
+- Minecraft
+- Deluge
+- TorrServer
+- Docker
+- AdGuard VPN
+- VPN selective routing
+- destination lists
+- Internet schedules
+- Internet time quotas
+- audit
+- jobs

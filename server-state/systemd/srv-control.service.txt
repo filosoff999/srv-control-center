@@ -50,22 +50,22 @@ WantedBy=multi-user.target
 
 ● srv-control.service - SRV Control Center
      Loaded: loaded (/etc/systemd/system/srv-control.service; enabled; preset: enabled)
-     Active: active (running) since Mon 2026-08-17 03:00:03 MSK; 1h 45min ago
+     Active: active (running) since Mon 2026-08-17 03:00:03 MSK; 1h 48min ago
  Invocation: b2ba41379cbf433084a3be3f511b313d
    Main PID: 399610 (python)
-      Tasks: 8 (limit: 8609)
-     Memory: 78.5M (peak: 78.9M)
-        CPU: 21.467s
+      Tasks: 7 (limit: 8609)
+     Memory: 76.6M (peak: 78.9M)
+        CPU: 21.953s
      CGroup: /system.slice/srv-control.service
              └─399610 /opt/srv-control/venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8876 --proxy-headers --forwarded-allow-ips=127.0.0.1
 
-Aug 17 04:45:49 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/health HTTP/1.1" 200 OK
-Aug 17 04:45:49 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/health HTTP/1.1" 200 OK
-Aug 17 04:45:49 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/dashboard/stream HTTP/1.1" 200 OK
-Aug 17 04:45:53 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /ui/module/system HTTP/1.1" 200 OK
-Aug 17 04:45:54 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /ui/module/internet HTTP/1.1" 200 OK
-Aug 17 04:45:55 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /ui/module/samba HTTP/1.1" 200 OK
-Aug 17 04:45:56 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /ui/dashboard HTTP/1.1" 200 OK
-Aug 17 04:45:56 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/dashboard/stream HTTP/1.1" 200 OK
-Aug 17 04:45:57 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /ui/module/samba HTTP/1.1" 200 OK
-Aug 17 04:46:00 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 04:46:01 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /ui/module/internet HTTP/1.1" 200 OK
+Aug 17 04:46:02 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /ui/module/system HTTP/1.1" 200 OK
+Aug 17 04:46:10 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 04:46:27 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 04:46:30 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 04:46:40 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 04:46:50 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 04:47:00 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 04:47:10 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 04:47:20 srv.hm.dm python[399610]: INFO:     192.168.10.200:0 - "GET /api/v1/health HTTP/1.1" 200 OK

@@ -54,13 +54,11 @@ WantedBy=multi-user.target
  Invocation: b2ba41379cbf433084a3be3f511b313d
    Main PID: 399610 (python)
       Tasks: 7 (limit: 8609)
-     Memory: 77.4M (peak: 79.6M)
-        CPU: 2min 4.450s
+     Memory: 77.5M (peak: 79.6M)
+        CPU: 2min 7.474s
      CGroup: /system.slice/srv-control.service
              └─399610 /opt/srv-control/venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8876 --proxy-headers --forwarded-allow-ips=127.0.0.1
 
-Aug 17 08:59:04 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
-Aug 17 09:00:04 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
 Aug 17 09:01:04 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
 Aug 17 09:02:04 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
 Aug 17 09:03:04 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
@@ -69,3 +67,5 @@ Aug 17 09:05:04 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api
 Aug 17 09:06:04 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
 Aug 17 09:07:04 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
 Aug 17 09:08:04 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:09:04 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:10:04 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK

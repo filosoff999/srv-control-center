@@ -50,17 +50,15 @@ WantedBy=multi-user.target
 
 ● srv-control.service - SRV Control Center
      Loaded: loaded (/etc/systemd/system/srv-control.service; enabled; preset: enabled)
-     Active: active (running) since Mon 2026-08-17 03:00:03 MSK; 5h 38min ago
+     Active: active (running) since Mon 2026-08-17 03:00:03 MSK; 5h 40min ago
  Invocation: b2ba41379cbf433084a3be3f511b313d
    Main PID: 399610 (python)
       Tasks: 7 (limit: 8609)
-     Memory: 77.4M (peak: 79.1M)
-        CPU: 1min 22.524s
+     Memory: 77.2M (peak: 79.1M)
+        CPU: 1min 25.430s
      CGroup: /system.slice/srv-control.service
              └─399610 /opt/srv-control/venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8876 --proxy-headers --forwarded-allow-ips=127.0.0.1
 
-Aug 17 08:35:38 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
-Aug 17 08:35:48 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
 Aug 17 08:35:58 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
 Aug 17 08:36:09 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
 Aug 17 08:36:19 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
@@ -69,3 +67,5 @@ Aug 17 08:36:39 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api
 Aug 17 08:36:49 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
 Aug 17 08:36:59 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
 Aug 17 08:38:00 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 08:39:01 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 08:40:02 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK

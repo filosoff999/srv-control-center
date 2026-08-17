@@ -54,18 +54,18 @@ WantedBy=multi-user.target
  Invocation: b2ba41379cbf433084a3be3f511b313d
    Main PID: 399610 (python)
       Tasks: 7 (limit: 8609)
-     Memory: 78.5M (peak: 80.4M)
-        CPU: 2min 42.323s
+     Memory: 78.4M (peak: 80.6M)
+        CPU: 2min 45.559s
      CGroup: /system.slice/srv-control.service
              └─399610 /opt/srv-control/venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8876 --proxy-headers --forwarded-allow-ips=127.0.0.1
 
-Aug 17 09:33:03 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /ui/dashboard HTTP/1.1" 200 OK
-Aug 17 09:33:03 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/dashboard/stream HTTP/1.1" 200 OK
-Aug 17 09:33:13 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
-Aug 17 09:33:23 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
-Aug 17 09:33:33 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
-Aug 17 09:33:43 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
-Aug 17 09:33:53 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
-Aug 17 09:34:03 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
-Aug 17 09:34:13 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
-Aug 17 09:34:23 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:35:03 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:35:13 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:35:23 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:35:33 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:35:43 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:35:53 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:36:03 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:36:13 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:36:23 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
+Aug 17 09:36:33 srv.hm.dm python[399610]: INFO:     192.168.10.121:0 - "GET /api/v1/health HTTP/1.1" 200 OK
